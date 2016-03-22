@@ -1,0 +1,35 @@
+$small_phone: 210px;
+$lrg_phone: 400px;
+$tablet: 700px;
+$small_comp: 1000px;
+$lrg_comp: 2000px;
+
+$user_col_no:12;
+
+$black: #000;
+$red:#ff0000;
+$blue: #334dae;
+$green: #799758;
+
+$colors: $red;
+
+
+$font-size: 16px;
+
+//reset variables
+
+$reset_selectors: html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6,p,blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th,td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video;
+
+
+//html older broswer elements
+$old_reset_selectors: article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section;
+
+
+// general use
+$link_state: link, visited, hover, active;
+
+//dev vars
+$border_parent: 3px $black solid;
+$border_child1: 3px $green solid;
+$border_child2: 3px $blue solid;
+$border_insp: 2px $red solid;

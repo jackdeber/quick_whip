@@ -1,0 +1,21 @@
+/*These are the added mobile styles*/
+/*@include xtnd_loop_val($reset_selectors, '%mob_styles');*/
+
+body {
+@extend %body;
+text-align:center;
+@include media_query ($tablet, min){
+font-size:1.142857em; 
+text-align:left;}
+}
+
+
+.nav{
+li{
+@include media_query($tablet, max){
+&[class*='column-']{
+margin:0 auto;
+}
+}
+}
+}

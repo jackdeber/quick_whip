@@ -1,0 +1,79 @@
+/* Resets the browser default */
+@include xtnd_loop_val($reset_selectors, '%main_elements_rst');
+
+@include xtnd_loop_val($old_reset_selectors, '%old_broswer');
+
+
+
+@for $i from 1 through 6
+    {
+        h#{$i}{
+                @extend %main_elements_rst;
+                @extend %h;
+                }
+    }
+
+
+
+#{nth($reset_selectors, 47)}, #{nth($reset_selectors, 48)}
+{
+    line-height:1;
+    
+}
+
+.nav{list-style-type:none;}
+
+
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/*stylistic resets*/
+a{
+&:link
+{
+    color: #000;
+}
+
+&:visited
+{
+    color: blue;
+}
+
+&:hover
+{
+    color: #ff0000;
+}
+
+&:active
+{
+    color: #ff0000;
+}
+}
+
+
+img
+{
+width:auto;
+height:auto;
+max-width:100%;
+}
+
+
+
+*
+{
+@extend %box_reset;
+&:after{@extend %box_reset}
+&:before{@extend %box_reset}
+}

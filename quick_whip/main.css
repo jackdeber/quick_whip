@@ -1,0 +1,170 @@
+/*
+
+
+
+Instructions for use.
+This framework is designed with a mobile first design. In order to get the best experience please use the <meta name="viewport" content="width=device-width">
+
+
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  padding: .6em 0;
+  margin: 0 15px; }
+
+body {
+  line-height: 1;
+  font-size: 16px; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#main:after, .row:after, .row:before {
+  content: "";
+  display: table; }
+
+/* Resets the browser default */
+ol, ul {
+  line-height: 1; }
+
+.nav {
+  list-style-type: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*stylistic resets*/
+a:link {
+  color: #000; }
+a:visited {
+  color: blue; }
+a:hover {
+  color: #ff0000; }
+a:active {
+  color: #ff0000; }
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%; }
+
+/*Main wrapper*/
+#main {
+  width: 190px;
+  margin: 0 auto; }
+  @media screen and (min-width: 400px) {
+    #main {
+      width: 380px; } }
+  @media screen and (min-width: 700px) {
+    #main {
+      width: 680px; } }
+  @media screen and (min-width: 1000px) {
+    #main {
+      width: 980px; } }
+  @media screen and (min-width: 2000px) {
+    #main {
+      width: 1080px; } }
+
+/*Defining the row*/
+.row {
+  width: 100%;
+  margin: 0.1875em 0; }
+  .row:after {
+    clear: both; }
+
+/*defining the columns*/
+[class*='column-'] {
+  padding: 2%;
+  min-height: 1em;
+  margin: 0 0.1875em;
+  display: block; }
+  [class*='column-']:after {
+    clear: both; }
+  [class*='column-']:before {
+    content: "";
+    display: table; }
+  @media screen and (min-width: 700px) {
+    [class*='column-'] {
+      float: left; } }
+
+.column-1 {
+  width: 8.33333%; }
+
+.column-2 {
+  width: 16.66667%; }
+
+.column-3 {
+  width: 25%; }
+
+.column-4 {
+  width: 33.33333%; }
+
+.column-5 {
+  width: 41.66667%; }
+
+.column-6 {
+  width: 50%; }
+
+.column-7 {
+  width: 58.33333%; }
+
+.column-8 {
+  width: 66.66667%; }
+
+.column-9 {
+  width: 75%; }
+
+.column-10 {
+  width: 83.33333%; }
+
+.column-11 {
+  width: 91.66667%; }
+
+.column-12 {
+  width: 100%; }
+
+/*These are the added mobile styles*/
+/*@include xtnd_loop_val($reset_selectors, '%mob_styles');*/
+body {
+  text-align: center; }
+  @media screen and (min-width: 700px) {
+    body {
+      font-size: 1.142857em;
+      text-align: left; } }
+
+@media screen and (max-width: 700px) {
+  .nav li[class*='column-'] {
+    margin: 0 auto; } }
+
+/*Devloper attributes*/
+/*body > *, #main > *{
+border: $border_parent;
+}
+
+.nav{li{border: $border_insp;}}*/
+
+/*# sourceMappingURL=main.css.map */

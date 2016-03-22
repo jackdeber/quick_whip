@@ -1,0 +1,70 @@
+/*Main wrapper*/
+
+#main
+{
+width: 190px;
+margin:0 auto;
+&:after
+        {
+            @extend %clearfix;
+        }
+    @include media_query (400px, min)
+        {
+    width: 380px;
+        }
+    @include media_query (700px, min)
+        {
+    width: 680px;
+        }
+    @include media_query ($small_comp, min)
+        {
+    width: 980px;
+        }
+    @include media_query ($lrg_comp, min)
+        {
+    width: 1080px;
+        }
+}
+
+
+
+/*Defining the row*/
+.row
+ {
+    width: 100%;
+margin:0.1875em 0;
+    &:after
+    {
+        @extend %clearfix;
+        clear: both; 
+    }
+    &:before
+        {
+            @extend %clearfix;
+        }
+  }
+
+
+
+
+/*defining the columns*/
+[class*='column-'] // takes any class with the string column and applies these properties to it.
+{
+    padding: 2%;
+    min-height: 1em;
+margin: 0 0.1875em;
+display: block;
+&:after{
+clear:both;
+}
+&:before{
+content: "";        // This is a the %clearfix because we cant access the @extend at this level.
+display: table;
+}
+@include media_query ($tablet, min)
+{
+    float: left;
+}
+}
+
+@include creat_col($user_col_no);

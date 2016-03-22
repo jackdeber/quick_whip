@@ -1,0 +1,51 @@
+//reset mixins
+@mixin xtnd_loop_val ($element_list, $extend)
+    {
+        @each $element in $element_list
+            {
+    
+                #{$element}{
+                            @extend #{$extend};
+
+
+}
+}
+}
+
+
+//grid styles
+@mixin boxSize ($property)
+{
+-moz-box-sizing: $property;
+-webkit-box-sizing: $property;
+box-sizing: $property;
+}
+
+
+
+//creates the number of columns and divides the width by the amount * the grading number.
+@mixin creat_col($columns)
+{
+@for $i from 1 through $columns
+{
+$width: 1/$columns*$i;
+.column-#{$i}{
+width: percentage($width);
+}
+}
+}
+
+
+
+
+
+
+//@media query mixins
+
+@mixin media_query ($screen_size_px, $min_max: min)
+{
+@media screen and (#{$min_max}-width: $screen_size_px)
+{
+@content;
+}
+}
