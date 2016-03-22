@@ -1,2 +1,2 @@
 # quick_whip
-A Mobile First CSS framework developed by Philip Conlon
+My name is philip conlon and I am the lead developer in this programm.
